@@ -1,4 +1,5 @@
 .service-seo-heading{font-size:clamp(38px,5vw,66px)}
 .service-seo-copy,.service-outcome{max-width:720px;color:var(--muted);font-size:17px;line-height:1.8;margin-top:28px}
 .service-outcome{color:#aaa}
-@media(max-width:900px){body:has(.mobile-menu[open]){overflow:hidden}.header .logo{position:relative;z-index:32}}
+.mobile-menu-trigger{display:none}
+@media(max-width:900px){body:has(.mobile-menu.open){overflow:hidden}.header .logo{position:relative;z-index:32}.mobile-menu-trigger{position:relative;z-index:32;display:flex;align-items:center;gap:12px;padding:12px 0;border:0;background:transparent;color:inherit;cursor:pointer;text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800}.mobile-menu-trigger i{display:block;width:18px;height:1px;background:currentColor;transition:transform .25s}.mobile-menu-trigger i:last-child{position:absolute;right:0;transform:translateY(5px)}.mobile-menu.open .mobile-menu-trigger i:first-of-type{transform:rotate(45deg)}.mobile-menu.open .mobile-menu-trigger i:last-child{transform:rotate(-45deg)}}
