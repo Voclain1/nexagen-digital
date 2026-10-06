@@ -5,7 +5,9 @@ import { Arrow } from "./site-shell";
 
 function captureUrl(project: (typeof projects)[number]) {
   if (project.slug === "momentum-desk") return "/work/momentum-desk.jpg";
-  const target = project.slug === "ijmb" ? "http://www.ijmb.ng" : project.slug === "sailglobe-resource" ? "http://www.sailgloberesourceltd.com" : `https://${project.url}`;
+  if (project.slug === "ijmb") return "/work/ijmb-cover.jpg";
+  if (project.slug === "sailglobe-resource") return "/work/sailglobe-cover.jpg";
+  const target = `https://${project.url}`;
   return `https://image.thum.io/get/width/1400/crop/900/noanimate/${target}`;
 }
 

@@ -16,8 +16,8 @@ export default async function CaseStudy({ params }: { params: Promise<{ slug: st
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
   if (!project) notFound();
-  const target = project.slug === "ijmb" ? "http://www.ijmb.ng" : project.slug === "sailglobe-resource" ? "http://www.sailgloberesourceltd.com" : `https://${project.url}`;
-  const capture = project.slug === "momentum-desk" ? "/work/momentum-desk.jpg" : `https://image.thum.io/get/width/1600/crop/900/noanimate/${target}`;
+  const localCovers: Partial<Record<(typeof projects)[number]["slug"], string>> = { ijmb: "/work/ijmb-cover.jpg", "sailglobe-resource": "/work/sailglobe-cover.jpg", "momentum-desk": "/work/momentum-desk.jpg" };
+  const capture = localCovers[project.slug] ?? `https://image.thum.io/get/width/1600/crop/900/noanimate/https://${project.url}`;
   return <>
     <section className="case-hero" style={{ background: project.color }}><div className="shell">
       <p className="eyebrow">{project.category}</p><h1>{project.title}</h1>
