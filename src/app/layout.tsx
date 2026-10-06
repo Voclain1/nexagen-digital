@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import { Footer, Header } from "@/components/site-shell";
 import "./globals.css";
+import "./overrides.css";
 
 const manrope = Manrope({ variable: "--font-body", subsets: ["latin"] });
 const space = Space_Grotesk({ variable: "--font-display", subsets: ["latin"] });
