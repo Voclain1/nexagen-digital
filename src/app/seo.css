@@ -1,3 +1,4 @@
 .service-seo-heading{font-size:clamp(38px,5vw,66px)}
 .service-seo-copy,.service-outcome{max-width:720px;color:var(--muted);font-size:17px;line-height:1.8;margin-top:28px}
 .service-outcome{color:#aaa}
+@media(max-width:900px){body:has(.mobile-menu[open]){overflow:hidden}.header .logo{position:relative;z-index:32}}
