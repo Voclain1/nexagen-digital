@@ -13,7 +13,7 @@
   .mobile-menu-trigger i:last-child{transform:translateY(5px);margin-left:-18px}
   .mobile-menu.open .mobile-menu-trigger i:first-of-type{transform:rotate(45deg)}
   .mobile-menu.open .mobile-menu-trigger i:last-child{transform:rotate(-45deg) translateY(0)}
-  .mobile-menu-panel{position:fixed;z-index:41;inset:0;background:#11120f !important;color:#fff;padding:100px 24px 32px;display:flex;flex-direction:column;justify-content:space-between;opacity:1;visibility:visible}
+  .mobile-menu-panel{position:fixed;z-index:10;inset:0;background:#11120f !important;color:#fff;padding:100px 24px 32px;display:flex;flex-direction:column;justify-content:space-between;opacity:1;visibility:visible}
   .mobile-menu-panel nav{display:flex;flex-direction:column;gap:0}
   .mobile-menu-panel nav a{display:grid;grid-template-columns:42px 1fr auto;align-items:center;padding:20px 0;border-bottom:1px solid #ffffff25;font-family:var(--font-display);font-size:clamp(30px,8vw,48px);letter-spacing:-.04em;color:#fff}
   .mobile-menu-panel nav a span{font-family:var(--font-body);font-size:10px;color:var(--lime);letter-spacing:.1em}
